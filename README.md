@@ -6,9 +6,9 @@ Catatan: Proyek ini masih dalam tahap awal pengembangan dan dibuat sebagai saran
 Yoru-Downloader adalah platform AI tanpa iklan yang menyediakan berbagai layanan downloader dalam satu tempat. Dengan antarmuka yang modern dan responsif, Yoru-Downloader memudahkan Anda untuk mengunduh konten dari berbagai platform media sosial.
 
 ✨ Fitur Utama
-📥 Facebook Downloader - Unduh video dari Facebook dengan berbagai pilihan kualitas
-📷 Instagram Downloader - Unduh foto dan video dari Instagram
-🎵 TikTok Downloader - Unduh video TikTok dalam kualitas SD/HD dan audio
+// 📥 Facebook Downloader - Unduh video dari Facebook dengan berbagai pilihan kualitas
+// 📷 Instagram Downloader - Unduh foto dan video dari Instagram
+// 🎵 TikTok Downloader - Unduh video TikTok dalam kualitas SD/HD dan audio
 🎶 YouTube to MP3 - Konversi video YouTube ke file audio MP3
 🎬 YouTube to MP4 - Unduh video YouTube dengan pilihan kualitas (144p-1080p)
 
