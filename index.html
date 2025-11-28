@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoru-Downloader - Platform AI Tanpa Iklan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <h1><i class=></i> Yoru-Downloader</h1>
+            <p>Platform AI Tanpa Iklan</p>
+          </div>
+          <div class="header-controls">
+            <div class="search-container">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Cari fitur..."
+              />
+              <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button id="menu-toggle" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <nav id="side-menu" class="side-menu">
+        <div class="menu-header">
+          <h2>Menu</h2>
+          <button id="close-menu" class="close-menu">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item active">
+            <a href="#downloaders"
+              ><i class="fas fa-download"></i> Downloader</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="downloaders" class="content-section">
+          <h2 class="section-title">
+            <i class="fas fa-download"></i> Fitur Downloader
+          </h2>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="card-header">
+                <h3><i class="fab fa-facebook"></i> Facebook Downloader</h3>
+              </div>
+              <div class="card-content">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="fb-url-input"
+                    placeholder="Masukkan link Facebook"
+                  />
+                  <button onclick="downloadFacebook()">
+                    <i class="fas fa-download"></i> Cari
+                  </button>
+                </div>
+                <div id="fb-result" class="result-box"></div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-header">
+                <h3><i class="fab fa-instagram"></i> Instagram Downloader</h3>
+              </div>
+              <div class="card-content">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="ig-url-input"
+                    placeholder="Masukkan link Instagram"
+                  />
+                  <button onclick="downloadInstagram()">
+                    <i class="fas fa-download"></i> Cari
+                  </button>
+                </div>
+                <div id="ig-result" class="result-box"></div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-header">
+                <h3><i class="fab fa-tiktok"></i> TikTok Downloader</h3>
+              </div>
+              <div class="card-content">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="tiktok-url-input"
+                    placeholder="Masukkan link TikTok"
+                  />
+                  <button onclick="downloadTikTok()">
+                    <i class="fas fa-download"></i> Cari
+                  </button>
+                </div>
+                <div id="tiktok-result" class="result-box"></div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-header">
+                <h3><i class="fab fa-youtube"></i> YouTube to MP3</h3>
+              </div>
+              <div class="card-content">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="ytmp3-url-input"
+                    placeholder="Masukkan link YouTube"
+                  />
+                  <button onclick="downloadYtMp3()">
+                    <i class="fas fa-music"></i> Konversi
+                  </button>
+                </div>
+                <div id="ytmp3-result" class="result-box"></div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-header">
+                <h3><i class="fab fa-youtube"></i> YouTube to MP4</h3>
+              </div>
+              <div class="card-content">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="ytmp4-url-input"
+                    placeholder="Masukkan link YouTube"
+                  />
+                  <select id="ytmp4-quality">
+                    <option value="144" selected>144p</option>
+                    <option value="240">240p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p</option>
+                    <option value="1080">1080p</option>
+                  </select>
+                  <button onclick="downloadYtMp4()">
+                    <i class="fas fa-video"></i> Konversi
+                  </button>
+                </div>
+                <div id="ytmp4-result" class="result-box"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="content-section">
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i> Tentang Yoru-Downloader
+          </h2>
+          <div class="about-content">
+            <p>
+              Yoru-Downloader adalah platform AI tanpa iklan yang menyediakan
+              berbagai fitur downloader yang bermanfaat dan berguna. Dengan
+              antarmuka yang modern dan responsif, Yoru-Downloader memudahkan
+              Anda untuk mengakses berbagai layanan downloader dalam satu
+              tempat.
+            </p>
+            <p>
+              Platform ini dilengkapi dengan tema gelap dan terang yang dapat
+              disesuaikan dengan preferensi Anda, serta berbagai animasi yang
+              menarik untuk pengalaman pengguna yang lebih baik.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025 Yoru-Downloader. Dibuat Oleh Muhammad Hilmy tanpa iklan.
+        </p>
+      </footer>
+    </div>
+
+    <div id="particles-bg" class="particles-bg"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
